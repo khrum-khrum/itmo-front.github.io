@@ -1,0 +1,204 @@
+* {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+html {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+#body {
+	width: 100%;
+}
+
+header {
+	float: right;
+	height: 100px;	
+	border-bottom: 4px solid silver;
+	width: 70%;
+	position: fixed;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+#logo-block {
+	float: right;
+	width: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 100px;
+	align-items: center;	
+}
+
+#logo-img {
+	width: 100%;
+	height: 100px;
+}
+
+#blog-name-block {
+	float: right;
+	width: 70%;
+	text-align: center;
+	height: 100px;
+	align-items: center;
+}
+
+#blog-name {
+	top: 50%;
+	transform: translateY(100%);
+	color: #515151;
+}
+
+.panel {
+	margin-top: 120px;
+	float: right;
+	width: 20%;
+	margin-left: 10%;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.list-elem {
+	padding-bottom: 10px;
+	color: #9f9f9f;
+}
+
+#blog-content {
+	margin-top: 120px;
+	float: right; 
+	width: 70%;
+}
+
+article {
+	margin-bottom: 40px;
+}
+
+article h2 {
+	color: #21759b;
+}
+
+.container {
+	max-width: 800px;
+	margin: auto;
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	text-align: center;
+	color: #333;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 10px;
+}
+
+.row {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 10px;
+}
+
+.header {
+	background-color: #007BFF;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	text-align: left;
+}
+
+.row:nth-child(odd) {
+	background-color: white;
+}
+
+.row:nth-child(even) {
+	background-color: #e9ecef;
+}
+
+.cell {
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+footer {
+	float: right;
+	margin-right: 30%;
+	width: 70%;
+	text-align: center;
+	height: 70px;
+	border-top: 4px solid silver;
+}
+
+#next {
+	float: right;
+}
+
+#previous {
+	float: left;  
+}
+
+.license {
+	float: left;
+	top: 50%;
+	transform: translateY(50%);
+}
+
+#top-button {
+	float: right; 
+	top: 50%;
+	transform: translateY(50%);
+}
+
+@media (max-width: 768px) {
+	.panel {
+		float: right;
+		width: 100%;
+	}
+
+	.contacts-name {
+		float: left;
+		width: 30%;
+		height: 50px;
+	}
+
+	.contacts-list {
+		float: right;
+		width: 70%;
+		height: 50px;
+		margin: auto;
+	}
+
+	.search {
+		float: left;
+		width: 30%;
+		height: 50px;
+	}
+
+	.topics {
+		float: right;
+		width: 70%;
+		height: 50px;
+		margin: auto;
+	}
+
+	.list-elem {
+		display: inline-block;
+	}
+
+	#blog-content {
+		width: 100%;
+		margin-top: 0;
+	}
+
+	footer {
+		float: left;
+		width: 100%;
+	}
+}
