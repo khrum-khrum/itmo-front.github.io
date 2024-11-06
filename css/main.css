@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
 	margin-top: 0;
 	padding-top: 0;
@@ -8,8 +10,9 @@ html {
 	margin-right: 15%;
 }
 
-#body {
+.body {
 	width: 100%;
+	font-family: "Roboto", serif;
 }
 
 header {
@@ -21,21 +24,23 @@ header {
 	background-color: rgba(255, 255, 255, 1);
 }
 
-#logo-block {
+.logo-block {
 	float: right;
 	width: 10%;
 	margin-left: 10%;
 	margin-right: 10%;
 	height: 100px;
 	align-items: center;	
+	background-color: rgba(255, 255, 255, 1);
+	/* box-shadow: 5px 5px 5px blue; */
 }
 
-#logo-img {
+.logo-img {
 	width: 100%;
 	height: 100px;
 }
 
-#blog-name-block {
+.blog-name-block {
 	float: right;
 	width: 70%;
 	text-align: center;
@@ -43,7 +48,7 @@ header {
 	align-items: center;
 }
 
-#blog-name {
+.blog-name {
 	top: 50%;
 	transform: translateY(100%);
 	color: #515151;
@@ -64,9 +69,14 @@ ul {
 .list-elem {
 	padding-bottom: 10px;
 	color: #9f9f9f;
+	text-decoration: underline;
 }
 
-#blog-content {
+.list-elem a {
+	color: #9f9f9f;
+}
+
+.blog-content {
 	margin-top: 120px;
 	float: right; 
 	width: 70%;
@@ -136,11 +146,11 @@ footer {
 	border-top: 4px solid silver;
 }
 
-#next {
+.next {
 	float: right;
 }
 
-#previous {
+.previous {
 	float: left;  
 }
 
@@ -150,55 +160,78 @@ footer {
 	transform: translateY(50%);
 }
 
-#top-button {
+.top-button {
 	float: right; 
 	top: 50%;
 	transform: translateY(50%);
 }
 
 @media (max-width: 768px) {
+	.list-elem {
+		padding-bottom: 0;
+	}
+
 	.panel {
+		margin: 0;
 		float: right;
+		margin-top: 104px;
 		width: 100%;
+		border-bottom: 4px solid silver;
 	}
 
 	.contacts-name {
+		margin-top: 10px;
 		float: left;
-		width: 30%;
-		height: 50px;
+		width: 20%;
+		margin-right: 10%;
+		height: 30px;
 	}
 
 	.contacts-list {
-		float: right;
-		width: 70%;
-		height: 50px;
-		margin: auto;
+		margin: 0;
+		padding: 0;
+		margin-top: 10px;
+		float: left;
+		width: 60%;
+		margin-left: 10%;
+		height: 30px;
 	}
 
 	.search {
+		margin-top: 10px;
+		margin-bottom: 10px;
 		float: left;
-		width: 30%;
-		height: 50px;
+		width: 20%;
+		margin-right: 10%;
+		height: 30px;
 	}
 
 	.topics {
-		float: right;
-		width: 70%;
-		height: 50px;
-		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		float: left;
+		width: 60%;
+		margin-left: 10%;
+		height: 30px;
 	}
 
 	.list-elem {
 		display: inline-block;
+		height: 30px;
+		line-height: 30px;
 	}
 
-	#blog-content {
+	.blog-content {
 		width: 100%;
-		margin-top: 0;
+		margin-top: 10px;
 	}
 
 	footer {
 		float: left;
 		width: 100%;
+	}
+
+	.license {
+		display: none;
 	}
 }
