@@ -5,19 +5,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content"Блог, Программирование, Саморзавития, Golang, Algorithms, Networks">
+  <link rel="stylesheet" href="css/main.css">
   <title>Блог Егора Кравченко</title>
 </head>
 
-<body>
+<body class="body">
   <header>
-    <img src="logo.jpg" alt="logo">
-    <h1>Егор Кравченко</h1>
+    <div class="logo-block"> 
+      <img class="logo-img" src="img/logo.jpg" alt="logo">
+    </div>
+    <div class="blog-name-block">
+      <h1 class="blog-name">Егор Кравченко</h1>
+    </div>
   </header>
-  <main>
-    <section>
-      <h2>Список постов</h2>
+  <div class="sep-line"></div>
+  <main class="main">
+    <div class="panel">
+      <aside>
+        <div class="contacts-name">
+          <h2>Контакты</h2>
+        </div>
+        <ul class="contacts-list">
+          <li class="list-elem">
+            <a href="https://www.linkedin.com">Linkedin</a>
+          </li>
+          <li class="list-elem">
+            <a href="https://t.me/just_Kreg">Telegram</a>
+          </li>
+          <li class="list-elem">
+            <a href="https://github.com/khrum-khrum">Github</a>
+          </li>
+          <li class="list-elem">
+            <a href="https://mail.google.com/mail/">Gmail</a>
+          </li>
+        </ul>
+      </aside>
+      <nav>
+        <div class="search">
+          </i><h2>Поиск</h2>
+        </div>
+        <ul class="topics">
+          <li class="list-elem">
+            <a>Golang</a>
+          </li>
+          <li class="list-elem">
+            <a>DBs</a>
+          </li>
+          <li class="list-elem">
+            <a>Networks</a>
+          </li>
+          <li class="list-elem">
+            <a>Algorithms</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <section class="blog-content">
       <article>
-        <h3>Устройтсво слайсов в Golang</h3>
+        <h2>Устройтсво слайсов в Golang</h2>
         <div>
           <p>Слайсы в Golang это обычные динамические массивы. Вот как они выглядят изнутри.</p>
           <code>
@@ -32,13 +77,36 @@ type slice struct {
         </div>
       </article>
       <article>
-        <h3>Транзакции в PostgreSQL</h3>
+        <h2>Транзакции в PostgreSQL</h2>
         <div>
           <p>PostreSQL позволяет реализовывать ACID транзакции.</p>
         </div>
+        <div class="container">
+          <h1>Уровни изоляции транзакций</h1>
+          <div class="grid">
+            <div class="header">Уровень изоляции</div>
+            <div class="header">Описание</div>
+          </div>
+          <div class="row">
+            <div class="cell">READ UNCOMMITTED</div>
+            <div class="cell">Чтение данных, которые могут быть изменены другими транзакциями.</div>
+          </div>
+          <div class="row">
+            <div class="cell">READ COMMITTED</div>
+            <div class="cell">Чтение только тех данных, которые были зафиксированы.</div>
+          </div>
+          <div class="row">
+            <div class="cell">REPEATABLE READ</div>
+            <div class="cell">Гарантия, что данные, прочитанные в транзакции, не изменятся до её завершения.</div>
+          </div>
+          <div class="row">
+            <div class="cell">SERIALIZABLE</div>
+            <div class="cell">Самый строгий уровень, который обеспечивает полную изоляцию транзакций.</div>
+          </div>
+        </div>
       </article>
       <article>
-        <h3>Протокол DNS</h3>
+        <h2>Протокол DNS</h2>
         <div>
           <p>Протокол DNS необходим для получения IP адреса по доменному имени.</p> 
           <pre>
@@ -74,62 +142,26 @@ type slice struct {
         </div>
       </article>
       <article>
-        <h3>Временная сложность алгоритмов</h3>
+        <h2>Временная сложность алгоритмов</h2>
         <div>
           <p>Вы возможно встречали странные записии вида O(n<sup>2</sup>).</p>
         </div>
       </article>
       <nav>
-        <h4>
+        <h4 class="previous">
           <a>Прошлая страница</a>
         </h4>
-        <h4>
+        <h4 class="next">
          <a>Следующая страница</a>
         </h4>
       </nav>
     </section>
-    <div>
-      <aside>
-        <h2>Контактная информация</h2>
-        <ul>
-          <li>
-            <a>Linkedin</a>
-          </li>
-          <li>
-            <a>Telegram</a>
-          </li>
-          <li>
-            <a>Github</a>
-          </li>
-          <li>
-            <a>Gmail</a>
-          </li>
-        </ul>
-      </aside>
-      <nav>
-        <h2>Поиск по темам</h2>
-        <ul>
-          <li>
-            <a>Golang</a>
-          </li>
-          <li>
-            <a>DBs</a>
-          </li>
-          <li>
-            <a>Networks</a>
-          </li>
-          <li>
-            <a>Algorithms</a>
-          </li>
-       </ul>
-      </nav>
-    </div>
   </main>
   <footer>
-    <div>
+    <div class="license">
      Тут будет всякая лицензионная информация
     </div>
-    <div>
+    <div class="top-button">
       <a>Кнопка наверх</a>
     </div>
   </footer>
