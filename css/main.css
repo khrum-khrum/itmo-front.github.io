@@ -191,8 +191,9 @@ footer {
 		width: 30%;
 		margin-right: 10%;
 		height: 30px;
-		/* position: absolute; */
 		font-size: smaller;
+
+		/* position: absolute; */
 	}
 
 	.search {
@@ -203,17 +204,18 @@ footer {
 		width: 30%;
 		margin-right: 10%;
 		height: 30px;
-		/* position: absolute; */
 		font-size: smaller;
+
+		/* position: absolute; */
 	}
 
 	.contacts-list {
 		margin: 0;
 		padding: 0;
-		float: right;
-		margin-right: 10%;
-		width: 30%;
+		/* float: left; */
 		margin-left: 10%;
+		width: 30%;
+		margin-right: 10%;
 
 		font-size: small;
 		display: none;
@@ -225,7 +227,7 @@ footer {
 	.topics {
 		margin: 0;
 		padding: 0;
-		float: left;
+		/* float: right; */
 		margin-right: 10%;
 		width: 30%;
 		margin-left: 10%;
@@ -236,6 +238,10 @@ footer {
 		opacity: 0;
 		transition: 0.5s;
 	}
+
+	/* .clear-float {
+		clear: both;
+	} */
 
 	.list-elem {
 		padding-bottom: 0;
@@ -276,5 +282,6 @@ footer {
 	footer {
 		float: left;
 		width: 100%;
+		font-size: smaller;
 	}
 }
