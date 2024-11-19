@@ -76,6 +76,14 @@ ul {
 	color: #9f9f9f;
 }
 
+.list-elem a:hover {
+	color: #21759b;
+}
+
+.topics .list-elem a.active {
+	color: #21759b;
+}
+
 .blog-content {
 	margin-top: 120px;
 	float: right; 
@@ -156,6 +164,12 @@ footer {
 
 .top-button {
 	float: right; 
+	top: 50%;
+	transform: translateY(50%);
+}
+
+footer p {
+	float: left;
 	top: 50%;
 	transform: translateY(50%);
 }

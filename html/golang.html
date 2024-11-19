@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content"Блог, Программирование, Саморзавития, Golang, Algorithms, Networks">
+	<link rel="stylesheet" href="../main.css">
+	<script src="../scripts/active.js"></script>
+	<title>Блог Егора Кравченко</title>
+</head>
+
+<body class="body">
+	<header>
+		<div class="logo-block">
+			<img class="logo-img" src="../img/golang/golang.png" alt="logo">
+		</div>
+		<div class="blog-name-block">
+			<h1 class="blog-name">Егор Кравченко</h1>
+		</div>
+	</header>
+	<main class="main">
+		<div class="panel">
+			<aside class="contacts">
+				<div class="contacts-name">
+					<h2>Контакты</h2>
+				</div>
+				<ul class="contacts-list">
+					<li class="list-elem">
+						<a href="https://www.linkedin.com">Linkedin</a>
+					</li>
+					<li class="list-elem">
+						<a href="https://t.me/just_Kreg">Telegram</a>
+					</li>
+					<li class="list-elem">
+						<a href="https://github.com/khrum-khrum">Github</a>
+					</li>
+					<li class="list-elem">
+						<a href="https://mail.google.com/mail/">Gmail</a>
+					</li>
+				</ul>
+			</aside>
+			<nav class="search">
+				<div class="search-name">
+					</i>
+					<h2>Поиск</h2>
+				</div>
+				<ul class="topics">
+					<li class="list-elem">
+						<a href="golang.html">Golang</a>
+					</li>
+					<li class="list-elem">
+						<a href="db.html">DBs</a>
+					</li>
+					<li class="list-elem">
+						<a href="network.html">Networks</a>
+					</li>
+					<li class="list-elem">
+						<a href="algo.html">Algorithms</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<section class="blog-content">
+			<article>
+				<h2>Устройтсво слайсов в Golang</h2>
+				<div>
+					<p>Слайсы в Golang это обычные динамические массивы. Вот как они выглядят изнутри.</p>
+					<code>
+            <pre>
+type slice struct {
+  array unsafe.Pointer
+  len   int
+  cap   int
+}
+            </pre>
+          </code>
+				</div>
+			</article>
+			<article>
+				<h2>Goroutines and Channels</h2>
+				<div>
+					<p>Golang известен своей эффективной поддержкой конкурентного программирования. Goroutines - это легкие потоки, а
+						Channels
+						- это механизм безопасной передачи данных между ними. Эта тема важна для создания высокопроизводительных и
+						масштабируемых приложений, особенно в обработке данных, сетевых сервисах и распределенных системах.</p>
+				</div>
+			</article>
+			<article>
+				<h2>Networking in Golang</h2>
+				<div>
+					<p>Golang предоставляет встроенные пакеты для работы с сетью и HTTP, что делает его идеальным инструментом для
+						разработки
+						веб-серверов, API и сетевых инструментов. Понимание работы с сокетами, HTTP-запросами и ответами, а также обработка
+						ошибок сети - важные навыки для разработчика на Golang.</p>
+				</div>
+			</article>
+			<article>
+				<h2>Обработка данных и структуры данных</h2>
+				<div>
+					<p>Golang предлагает богатый набор встроенных структур данных, таких как массивы, слайсы, карты и структуры. Понимание
+						этих
+						структур и эффективных алгоритмов обработки данных, таких как сортировка и поиск, является основой для решения
+						многих
+						задач, включая анализ данных, обработку больших объемов информации и машинное обучение.</p>					
+				</div>
+			</article>
+			<article>
+				<h2>Тестирование и отладка</h2>
+				<div>
+					<p>Golang имеет встроенные инструменты для тестирования и отладки кода. Написание юнит-тестов, интеграционных тестов и
+						использование инструментов профилирования - важные практики для обеспечения качества и производительности кода.
+						Понимание этих инструментов помогает создавать надежные и стабильные приложения.</p>
+				</div>
+			</article>
+			<nav>
+				<h4 class="previous">
+					<a>Prev</a>
+				</h4>
+				<h4 class="next">
+					<a>Next</a>
+				</h4>
+			</nav>
+		</section>
+	</main>
+	<footer>
+		<div class="top-button">
+			<a>Кнопка наверх</a>
+		</div>
+		<script src="../scripts/load.js"></script>
+	</footer>
+</body>
+
+</html>
