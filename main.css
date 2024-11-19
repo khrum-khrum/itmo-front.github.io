@@ -178,90 +178,62 @@ footer {
 
 	.panel {
 		margin: 0;
-		/* float: right; */
-		margin-top: 79px;
+		margin-top: 75px;
 		width: 100%;
 		border-bottom: 4px solid silver;
 	}
 
-	.contacts-name {
-		margin-top: 10px;
+	.contacts {
 		float: left;
 		margin-left: 10%;
 		width: 30%;
 		margin-right: 10%;
-		height: 30px;
-		font-size: smaller;
-
-		/* position: absolute; */
 	}
 
 	.search {
-		margin-top: 10px;
-		margin-bottom: 10px;
-		float: right;
+		float: left;
 		margin-left: 10%;
 		width: 30%;
 		margin-right: 10%;
+	}
+
+	.contacts-name {
+		margin-top: 10px;
 		height: 30px;
 		font-size: smaller;
+	}
 
-		/* position: absolute; */
+	.search-name {
+		margin-top: 10px;
+		height: 30px;
+		font-size: smaller;
 	}
 
 	.contacts-list {
-		margin: 0;
-		padding: 0;
-		/* float: left; */
-		margin-left: 10%;
-		width: 30%;
-		margin-right: 10%;
-
 		font-size: small;
 		display: none;
 		z-index: 1;
 		opacity: 0;
-		transition: 0.5s;
 	}
 
 	.topics {
-		margin: 0;
-		padding: 0;
-		/* float: right; */
-		margin-right: 10%;
-		width: 30%;
-		margin-left: 10%;
-
 		font-size: small;
 		display: none;
 		z-index: 1;
 		opacity: 0;
-		transition: 0.5s;
 	}
-
-	/* .clear-float {
-		clear: both;
-	} */
 
 	.list-elem {
 		padding-bottom: 0;
 		display: block;
 	}
 
-	aside:hover .contacts-list {
+	.contacts:hover .contacts-list {
 		display: block;	
 		opacity: 1;
 	}
 
-	/* aside:hover + nav {
-		display: none;
-	} */
-
-	/* nav:hover aside {
-		display: none;
-	} */
-
-	nav:hover .topics {
+	.search:hover .topics {
 		display: block;
 		opacity: 1;
 	}	
