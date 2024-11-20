@@ -1,4 +1,5 @@
 window.onload = function () {
+  console.log("loading...");
   let time = performance.timing;
   let pageloadTime = time.loadEventStart - time.navigationStart;
 
