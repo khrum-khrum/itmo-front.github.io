@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content"Блог, Программирование, Саморзавития, Golang, Algorithms, Networks">
+	<link rel="stylesheet" href="../main.css">
+	<script src="../scripts/active.js"></script>
+	<title>Блог Егора Кравченко</title>
+</head>
+
+<body class="body">
+	<header>
+		<div class="logo-block">
+			<img class="logo-img" src="../img/db/db.png" alt="logo">
+		</div>
+		<div class="blog-name-block">
+			<h1 class="blog-name">Егор Кравченко</h1>
+		</div>
+	</header>
+	<main class="main">
+		<div class="panel">
+			<aside class="contacts">
+				<div class="contacts-name">
+					<h2>Контакты</h2>
+				</div>
+				<ul class="contacts-list">
+					<li class="list-elem">
+						<a href="https://www.linkedin.com">Linkedin</a>
+					</li>
+					<li class="list-elem">
+						<a href="https://t.me/just_Kreg">Telegram</a>
+					</li>
+					<li class="list-elem">
+						<a href="https://github.com/khrum-khrum">Github</a>
+					</li>
+					<li class="list-elem">
+						<a href="https://mail.google.com/mail/">Gmail</a>
+					</li>
+				</ul>
+			</aside>
+			<nav class="search">
+				<div class="search-name">
+					</i>
+					<h2>Поиск</h2>
+				</div>
+				<ul class="topics">
+					<li class="list-elem">
+						<a href="golang.html">Golang</a>
+					</li>
+					<li class="list-elem">
+						<a href="db.html">DBs</a>
+					</li>
+					<li class="list-elem">
+						<a href="network.html">Networks</a>
+					</li>
+					<li class="list-elem">
+						<a href="algo.html">Algorithms</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<section class="blog-content">
+			<article>
+				<h2>Реляционные базы данных (SQL)</h2>
+				<div>
+					<p>Реляционные базы данных (РБД) – это наиболее распространенный тип БД, основанный на структуре таблиц, связанных между
+					собой. Язык SQL (Structured Query Language) используется для управления данными в РБД: добавления, удаления, изменения и
+					извлечения информации. Популярные СУБД (системы управления базами данных) – MySQL, PostgreSQL, Oracle. Знание SQL –
+					ключевой навык для работы с РБД.</p>
+				</div>
+			</article>
+			<article>
+				<h2>NoSQL базы данных</h2>
+				<div>
+					<p>NoSQL базы данных – это альтернатива РБД, предназначенные для работы с большими объемами данных и сложными структурами.
+					Они предлагают гибкость в схеме данных и высокую масштабируемость. Существуют различные типы NoSQL: документные
+					(MongoDB), графовые (Neo4j), колоночные (Cassandra). Выбор типа NoSQL зависит от специфики задачи и требований к
+					хранению данных.</p>
+				</div>
+			</article>
+			<article>
+				<h2>Нормализация и денормализация</h2>
+				<div>
+					<p>Нормализация – это процесс организации данных в РБД для устранения избыточности и обеспечения целостности.
+					Денормализация – обратный процесс, направленный на повышение производительности за счет добавления избыточности. Выбор
+					между нормализацией и денормализацией зависит от приоритетов: целостность данных или скорость запросов. Понимание этих
+					концепций важно для оптимизации БД.</p>
+				</div>
+			</article>
+			<article>
+				<h2>Транзакции и ACID-свойства</h2>
+				<div>
+					<p>Транзакции – это логическая единица работы с данными, которая либо выполняется полностью, либо не выполняется вовсе.
+					ACID-свойства (атомарность, согласованность, изолированность, долговечность) гарантируют надежность транзакций.
+					Понимание транзакций и ACID-свойств важно для обеспечения целостности данных в БД, особенно в многопользовательских
+					средах, где несколько пользователей могут одновременно обращаться к данным.</p>
+				</div>
+			</article>
+			<nav>
+				<h4 class="previous">
+					<a>Prev</a>
+				</h4>
+				<h4 class="next">
+					<a>Next</a>
+				</h4>
+			</nav>
+		</section>
+	</main>
+	<footer>
+		<div class="top-button">
+			<a>Кнопка наверх</a>
+		</div>
+		<script src="../scripts/load.js"></script>
+	</footer>
+</body>
+
+</html>

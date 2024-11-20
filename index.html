@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content"Блог, Программирование, Саморзавития, Golang, Algorithms, Networks">
   <link rel="stylesheet" href="main.css">
+  <script src="scripts/active.js"></script>
   <title>Блог Егора Кравченко</title>
 </head>
 
@@ -18,7 +19,6 @@
       <h1 class="blog-name">Егор Кравченко</h1>
     </div>
   </header>
-  <div class="sep-line"></div>
   <main class="main">
     <div class="panel">
       <aside class="contacts">
@@ -46,7 +46,7 @@
         </div>
         <ul class="topics">
           <li class="list-elem">
-            <a>Golang</a>
+            <a href="html/golang.html">Golang</a>
           </li>
           <li class="list-elem">
             <a>DBs</a>
@@ -161,6 +161,20 @@ type slice struct {
     <div class="top-button">
       <a>Кнопка наверх</a>
     </div>
+    <script>
+      (function() {
+        window.onload = function () {
+          let time = performance.timing;
+          let pageloadTime = time.loadEventStart - time.navigationStart;
+
+          const footer = document.querySelector("footer");
+          const loadTimeElement = document.createElement("p");
+          loadTimeElement.textContent = `Page load time: ${pageloadTime.toFixed(2)} ms`;
+
+          footer.appendChild(loadTimeElement);
+        };
+      })();
+    </script>
   </footer>
 </body>
 
